@@ -1,0 +1,116 @@
+/* Todo.css */
+
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.todo-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.todo-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.todo-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-container button:hover {
+    background-color: #218838;
+}
+
+.todo-container ol {
+    padding-left: 20px;
+}
+
+.todo-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.todo-container li:hover {
+    transform: scale(1.02);
+}
+
+.todo-container li .task-details {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.todo-container li .task-details .task-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.todo-container li .task-details .task-date-time {
+    color: #666;
+    font-size: 14px;
+}
+
+.todo-container li button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-container li button:hover {
+    background-color: #c82333;
+}
+
+/* Additional styles for completed tasks */
+.todo-container li.completed .task-name {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-container li.completed .task-date-time {
+    color: #bbb;
+}
+
+/* Additional styles for priority */
+.todo-container li.high {
+    border-left: 5px solid red;
+}
+
+.todo-container li.medium {
+    border-left: 5px solid orange;
+}
+
+.todo-container li.low {
+    border-left: 5px solid green;
+}
